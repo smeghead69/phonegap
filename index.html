@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Solex Legal Servicesr</title>
+    </head>
+    <body>
+        <div class="app">
+            <div data-role="page" id="login">
+                <header data-role="header">
+                    <h1>Solex Legal Services</h1>
+                </header>
+                <div data-role="content">
+                    <nav data-role="navbar">
+                        <ul>
+                            <li><a href="#login" class="ui-btn-active">Login</a></li>
+                            <li><a href="#register">Register</a></li>
+                        </ul>
+                    </nav>	
+                    <h2>Returning Customers</h2>	
+                    <div id="errormsg"></div>
+                    <form>
+                        <input id="username" type="text" placeholder="Email Address" value="simon2@rubixitsolutions.com">
+                        <input id="password" type="password" placeholder="Password" value="password123">
+                        <button type="button" id="search_btn">Login</button>
+                    </form>
+                </div>
+            </div>
+            
+
+            <div data-role="page" id="register">
+                <header data-role="header">
+                    <h1>Solex Legal Services</h1>
+                </header>
+                <div data-role="content">
+                    <nav data-role="navbar">
+                        <ul>
+                            <li><a href="#login">Login</a></li>
+                            <li><a href="#register" class="ui-btn-active">Register</a></li>
+                        </ul>
+                    </nav>
+                    <h2>Register to use our app</h2>
+                    <div id="case_errormsg"></div>
+                    <form>
+                        <div id="plFileRef">
+                            <h3>Case Details</h3>
+                            <input id="fileref" type="text" placeholder="File Reference" value="CHE0022.133887">
+                            <input id="filepassword" type="password" placeholder="File Password" value="weknvx">
+                            <button type="button" id="proceed_btn">Continue</button>
+                        </div>
+                        <div id="plDetails" style="display:none;">
+                            <h3>Your Details</h3>                            
+                            Main Account Holder
+                            <select id="Borrowers"><option>-- Select who the main account holder will be</option></select>
+
+                            <div style="display:none;">
+                                <input id="FirstName" type="text">
+                                <input id="FirstName2" type="text">
+                                <input id="LastName" type="text">
+                                <input id="LastName2" type="text">
+                                <input id="Address1" type="text">
+                                <input id="Address2" type="text">
+                                <input id="Address3" type="text">
+                                <input id="Address4" type="text">
+                                <input id="PostCode" type="text">
+                                <input id="Address1b" type="text">
+                                <input id="Address2b" type="text">
+                                <input id="Address3b" type="text">
+                                <input id="Address4b" type="text">
+                                <input id="PostCodeb" type="text">
+                            </div>
+
+                            <input id="regemail" type="text" placeholder="Email Address" value="simon1@rubixitsolutions.com">
+                            <input id="regemail2" type="text" placeholder="Confirm Email Address" value="simon1@rubixitsolutions.com">
+                            <input id="regpassword" type="password" placeholder="Password" value="password123">
+                            <input id="regpassword2" type="password" placeholder="Confirm Password" value="password123">
+                            <button type="button" id="register_btn">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
