@@ -20,12 +20,16 @@
                 <div data-role="content">
                     <h2>My Account</h2>	
                     <div id="errormsg"></div>
+                    UserID: <div id="DisplayResults"></div>
                 </div>
             </div>
             
         </div>
         
-        
+
+        <script>
+         $("#DisplayResults").html(window.localStorage["userID"]);
+        </script>
         
         
         <script type="text/javascript" src="cordova.js"></script>
