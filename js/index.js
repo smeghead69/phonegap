@@ -142,7 +142,7 @@ $(document).ready(function(){
                 $.each(detailsposts, function () {
                     if (detailsposts.Status == "1") {
                         //console.log(caseposts.UserID);
-                        window.localStorage["userID"] = caseposts.UserID;
+                        window.localStorage["userID"] = detailsposts.UserID;
                         window.location = "Account.html";
                     }
                     else {
