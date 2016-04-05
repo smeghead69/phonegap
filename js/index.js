@@ -19,7 +19,7 @@ $(document).ready(function(){
                 if (posts.Status == "1")
                 {
                     window.localStorage["userID"] = posts.UserID;
-                    //window.location = "spec.html";
+                    window.location = "Account.html";
                 }
                 else
                 {
@@ -141,9 +141,9 @@ $(document).ready(function(){
                 //console.log(caseposts);
                 $.each(detailsposts, function () {
                     if (detailsposts.Status == "1") {
-                        console.log(caseposts.UserID);
-                        //window.localStorage["userID"] = caseposts.UserID;
-                        //window.location = "spec.html";
+                        //console.log(caseposts.UserID);
+                        window.localStorage["userID"] = caseposts.UserID;
+                        window.location = "Account.html";
                     }
                     else {
                         case_errormsg = detailsposts.ErrorMsg;
